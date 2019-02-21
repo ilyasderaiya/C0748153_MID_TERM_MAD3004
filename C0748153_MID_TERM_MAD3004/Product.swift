@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Product.swift
 //  C0748153_MID_TERM_MAD3004
 //
 //  Created by MacStudent on 2019-02-20.
@@ -7,6 +7,3 @@
 //
 
 import Foundation
-
-
-
