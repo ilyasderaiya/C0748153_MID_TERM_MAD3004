@@ -9,7 +9,7 @@
 import Foundation
 
 class Order{
-    var orderId: String
+    var orderId: String 
     var orderDate: Date
     
 }

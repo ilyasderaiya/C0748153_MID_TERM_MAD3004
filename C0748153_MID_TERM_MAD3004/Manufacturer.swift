@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class Manufacturer{
+    var manufacturerId: Int
+    var manufacturerName: String
+    
+    init(){
+        self.manufacturerId = 0
+        self.manufacturerName = String()
+    }
+    
+}
