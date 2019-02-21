@@ -18,3 +18,14 @@ extension Int{
         return "$\(self)"
     }
 }
+
+extension Dictionary {
+    func getOrderById(i: Int) {
+        for (_, order) in orderArray {
+            if (order.getOrderById() == i) {
+                print(order.display())
+            }
+        }
+    }
+    
+}

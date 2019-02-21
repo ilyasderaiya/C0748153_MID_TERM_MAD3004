@@ -19,3 +19,11 @@ var productArray = [p1, p2, p3, p4, p5]
 for i in productArray{
     print(i.productName)
 }
+
+
+var order1 = Order(OrdId: 01, OrdDate: Date(), pArray: [p5, p1], OrdTotal: 1320.0)
+var order2 = Order(OrdId: 02, OrdDate: Date(), pArray: [p2, p4], OrdTotal: 102.0)
+var order3 = Order(OrdId: 03, OrdDate: Date(), pArray: [p3, p4], OrdTotal: 390.0)
+
+var orderArray = [order1, order2, order3]
+

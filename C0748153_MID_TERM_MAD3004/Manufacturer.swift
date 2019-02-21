@@ -24,6 +24,7 @@ class Manufacturer: IDisplay{
     
     
     func display() {
-        
+        print("Manufacturer Id: \(manufacturerId)")
+        print("Manufacturer Name: \(manufacturerName)")
     }
 }
