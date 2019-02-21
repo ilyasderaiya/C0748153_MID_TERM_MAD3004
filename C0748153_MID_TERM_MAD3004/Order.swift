@@ -29,6 +29,7 @@ class Order: IDisplay {
         print("Order Id: \(orderId)")
         print("Order Date: \(orderDate)")
         
+        print("Ordered Products")
         for i in 0..<proArray.count {
             print("Product: \(proArray[i].productPrice)")
         }
@@ -37,7 +38,11 @@ class Order: IDisplay {
     
     func calTotal(products: [Product]) -> Float {
         var total: Float
-        total = products.reduce(0, +)
+        total = 0.0
+        for i in 0..<proArray.count {
+            total = total + proArray[i].productPrice
+        }
+        return total
     }
     
     func getOrderById() -> Int {
