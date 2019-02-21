@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Order {
+class Order: IDisplay {
     var orderId: Int
     var orderDate: Date
     var proArray = [Product]()
@@ -22,6 +22,25 @@ class Order {
         self.orderId = OrdId
         self.orderDate = OrdDate
        self.proArray = pArray
-        self.orderTotal = OrdTotal
+        self.orderTotal = calTotal(products: self.proArray)
+    }
+    
+    func display() {
+        print("Order Id: \(orderId)")
+        print("Order Date: \(orderDate)")
+        
+        for i in 0..<proArray.count {
+            print("Product: \(proArray[i].productPrice)")
+        }
+        print("Total: \(orderTotal)")
+    }
+    
+    func calTotal(products: [Product]) -> Float {
+        var total: Float
+        total = products.reduce(0, +)
+    }
+    
+    func getOrderById() -> Int {
+        return self.orderId
     }
 }
