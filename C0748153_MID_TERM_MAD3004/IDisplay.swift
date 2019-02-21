@@ -13,7 +13,7 @@ protocol IDisplay {
     func display()
 }
 
-extension Int{
+extension Float{
     func currency() -> String {
         return "$\(self)"
     }

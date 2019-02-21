@@ -11,13 +11,15 @@ import Foundation
 class Order: IDisplay {
     var orderId: Int
     var orderDate: Date
-    var proArray = [Product]()
-    var orderTotal: Float
+    var proArray: [Product]
+    var orderTotal: Float!
     init(){
         self.orderId = 0
         self.orderDate = Date()
         self.orderTotal = 0.0
+        self.proArray = []
     }
+    
     init(OrdId: Int, OrdDate: Date, pArray: [Product]) {
         self.orderId = OrdId
         self.orderDate = OrdDate
@@ -31,9 +33,9 @@ class Order: IDisplay {
         
         print("Ordered Products")
         for i in 0..<proArray.count {
-            print("Product: \(proArray[i].productPrice)")
+            print("Product: \(proArray[i].productName)")
         }
-        print("Total: \(orderTotal)")
+        print("Order Total : \(String(describing: orderTotal.currency()))")
     }
     
     func calTotal(products: [Product]) -> Float {
