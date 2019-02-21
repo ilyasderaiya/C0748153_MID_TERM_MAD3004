@@ -12,3 +12,9 @@ import Foundation
 protocol IDisplay {
     func display()
 }
+
+extension Int{
+    func currency() -> String {
+        return "$\(self)"
+    }
+}

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Manufacturer{
+class Manufacturer: IDisplay{
     var manufacturerId: Int
     var manufacturerName: String
     
@@ -17,4 +17,13 @@ class Manufacturer{
         self.manufacturerName = String()
     }
     
+    init(manId: Int, manName: String){
+        self.manufacturerId = manId
+        self.manufacturerName = manName
+    }
+    
+    
+    func display() {
+        
+    }
 }

@@ -8,8 +8,20 @@
 
 import Foundation
 
-class Order{
-    var orderId: String 
+class Order {
+    var orderId: Int
     var orderDate: Date
-    
+    var proArray = [Product]()
+    var orderTotal: Float
+    init(){
+        self.orderId = 0
+        self.orderDate = Date()
+        self.orderTotal = 0.0
+    }
+    init(OrdId: Int, OrdDate: Date, pArray: [Product], OrdTotal: Float) {
+        self.orderId = OrdId
+        self.orderDate = OrdDate
+       self.proArray = pArray
+        self.orderTotal = OrdTotal
+    }
 }
