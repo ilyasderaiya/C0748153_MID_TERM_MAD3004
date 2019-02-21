@@ -30,3 +30,11 @@ var orderArray = [order1.orderId: order1, order2.orderId: order2, order3.orderId
 for (_, order) in orderArray{
     print(order.display())
 }
+
+let sortByPrice = orderArray.sorted {
+    $0.1.orderTotal < $1.1.orderTotal
+}
+
+for (_, order) in sortByPrice {
+    print(order.display())
+}
