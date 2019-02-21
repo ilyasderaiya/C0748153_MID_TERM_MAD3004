@@ -29,4 +29,10 @@ class Product: Manufacturer {
         self.productQuantity = pQuantity
         super.init(manId: manuId, manName: manuName)
     }
+    override func display() {
+        print("Product Id: \(productId)")
+        print("Product Name: \(productName)")
+        print("Product Price: \(productPrice)")
+        print("Product Quantity: \(productQuantity)")
+    }
 }
