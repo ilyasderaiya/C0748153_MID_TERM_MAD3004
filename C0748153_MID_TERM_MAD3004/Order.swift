@@ -18,7 +18,7 @@ class Order: IDisplay {
         self.orderDate = Date()
         self.orderTotal = 0.0
     }
-    init(OrdId: Int, OrdDate: Date, pArray: [Product], OrdTotal: Float) {
+    init(OrdId: Int, OrdDate: Date, pArray: [Product]) {
         self.orderId = OrdId
         self.orderDate = OrdDate
        self.proArray = pArray
